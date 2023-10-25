@@ -78,25 +78,3 @@ body {
 .accordion--radio {
   --theme: var(--secondary);
 }
-
-/* Arrow animation */
-.tab input:not(:checked) + .tab__label:hover::after {
-  -webkit-animation: bounce .5s infinite;
-          animation: bounce .5s infinite;
-}
-@-webkit-keyframes bounce {
-  25% {
-    transform: rotate(90deg) translate(.25rem);
-  }
-  75% {
-    transform: rotate(90deg) translate(-.25rem);
-  }
-}
-@keyframes bounce {
-  25% {
-    transform: rotate(90deg) translate(.25rem);
-  }
-  75% {
-    transform: rotate(90deg) translate(-.25rem);
-  }
-}
